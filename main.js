@@ -13,11 +13,8 @@ window.addEventListener('keyup', function(e) {
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
     if (pressed.join('').includes(secretCode)) {
-        console.log('DING DING!');
         doSpecialThing();
     }
-
-    console.log(pressed);
 });
 
 // object of keys involved in konami code
