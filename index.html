@@ -10,49 +10,70 @@
 </head>
 <body>
     <!-- landing page -->
-    <div class="landing">
-        <h1>Konami Code</h1>
-    </div>
+    <header class="landing wrapper">
+        <h1><img src="konamilogo.png" alt=""> Code</h1>
+
+        <a href="#about" class="next">next</a>
+    </header>
 
     <!-- about -->
-    <div class="what-is-is">
+    <section class="about wrapper" id="about">
+        <h2>What is <img src="konamilogo.png" alt=""> Code?</h2>
+        <img src="konamicode.svg.png" alt="konami code sequence" class="konami-buttons">
 
-    </div>
+
+        <a href="#examples" class="next">next</a>
+    </section>
 
     <!-- examples -->
-    <div class="examples">
-        <a href="https://filipstepien.com/#about"></a>
+    <section class="examples wrapper" id="examples">
+        <h2>Some Examples</h2>
 
-        <!-- uk -->
-        <a href="https://www.wired.co.uk/"></a>
-        <a href="https://www.vogue.co.uk/"></a>
-        <a href="https://www.gq-magazine.co.uk/"></a>
+        <div class="examples-list">
+            <h3>HackerYou Alum</h3>
+            <a href="https://filipstepien.com/#about">Filip Stepien</a>
 
-        <!-- buzzfeed -->
-        <a href="https://www.buzzfeed.com/"></a>
+            <!-- uk -->
+            <h3>UK Madness</h3>
+            <a href="https://www.wired.co.uk/">Wired</a>
+            <a href="https://www.vogue.co.uk/">Vogue</a>
+            <a href="https://www.gq-magazine.co.uk/">GQ</a>
+
+            <!-- buzzfeed -->
+            <h3>Buzzfeed</h3>
+            <a href="https://www.buzzfeed.com/">Buzzfeed</a>
+        </div>
 
         <!-- cornify -->
-        <a href="http://www.cornify.com/"></a>
-
-        <!-- digg -->
-        <a href="http://digg.com/"></a>
-
-
-    </div>
+        <!-- <a href="http://www.cornify.com/"></a> -->
+        <a href="#code" class="next">next</a>
+    </section>
 
     <!-- code demo -->
-    <div class="code">
+    <div class="code wrapper" id="code">
+        <img src="" alt="konami code example1" class="keycodes">
+        <img src="" alt="konami code example2" class="lettercodes">
 
+        <a href="#how-to" class="next">next</a>
     </div>
 
     <!-- how to use -->
-    <div class="how-to">
+    <div class="how-to wrapper" id="how-to">
+        <h2>How is this useful???</h2>
+        <ul>
+            <li>testing</li>
+            <li>presentations</li>
+            <li>displaying information to select people</li>
+        </ul>
+        <p>It's also, just such great fun.</p>
 
     </div>
 
 
 
     <!-- link to scripts -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
