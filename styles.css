@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 4rem;
+    margin-top: 30px;
 }
 
 h3 {
@@ -36,11 +37,15 @@ a, li, p{
     font-size: 2.8rem;
 }
 
+.red {
+    color: #E51E2B;
+}
+
 .next {
     text-decoration: none;
     color: black;
     font-size: 4rem;
-    margin-top: 30px;
+    margin-top: 40px;
     font-weight: 700;
     transition: all 0.3s ease-in;
     width: 100px;
@@ -52,7 +57,7 @@ a, li, p{
 }
 
 .wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     min-height: 100vh;
 }
@@ -78,4 +83,34 @@ section {
 
 .about .konami-buttons {
     width: 100%;
+}
+
+.gradius {
+    display: flex;
+}
+
+.gradius img {
+    margin: 15px;
+    width: calc(50% - 30px);
+}
+
+/* actual code */
+
+.examples-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+.example {
+    text-align: center;
+}
+
+.example:nth-child(2) img {
+    margin: 0 auto;
+    width: 170px;
+}
+
+.example:nth-child(3) img {
+    margin-top: 150px;
 }

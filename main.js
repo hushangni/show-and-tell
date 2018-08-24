@@ -1,8 +1,7 @@
-// word konami
 // empty array to track the keys user will press
 const pressed = [];
 // secret code to match
-const secretCode = 'konami';
+const code = 'konami';
 
 window.addEventListener('keyup', function(e) {
     // push every key pressed by user into pressed
@@ -10,9 +9,9 @@ window.addEventListener('keyup', function(e) {
     // cutting the array of pressed to only include the most recent
     // pressed keys, up until the length of the secret code
     // if pressed.length < secretCode.length, no cutting will be done
-    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    pressed.splice(-code.length - 1, pressed.length - code.length);
 
-    if (pressed.join('').includes(secretCode)) {
+    if (pressed.join('').includes(code)) {
         doSpecialThing();
     }
 });
@@ -52,12 +51,12 @@ document.addEventListener('keyup', function(e) {
 });
 
 const doSpecialThing = () => {
-    document.body.style.backgroundImage = "url('images/cheatBackground.png')";
+    // document.body.style.backgroundImage = "url('images/cheatBackground.png')";
 
-    var audio = new Audio('audio/pling.mp3');
-    audio.play();
-
-    alert("doing special thing");
+    // var audio = new Audio('audio/pling.mp3');
+    // audio.play();
+    cornify_add();
+    // alert("doing special thing");
 }
 
 
